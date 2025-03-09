@@ -20,3 +20,9 @@ def char_count(text) :
                 char_dict[char] = 1
 
     return char_dict
+
+def sorted_char_count(text) :
+    values_list = list(text.items())
+    values_list.sort(key=lambda x: x[1], reverse=True)
+    sorted_dict = dict(values_list)
+    return sorted_dict
